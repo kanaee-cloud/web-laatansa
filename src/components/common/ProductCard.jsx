@@ -3,14 +3,13 @@ import { motion } from 'framer-motion';
 import { Package, Zap, Monitor, Tent, Speaker, Camera, Fan, Lightbulb } from 'lucide-react';
 
 const ProductCard = ({ product, onOpenModal }) => {
-  const formatPrice = (price) => {
-    return new Intl.NumberFormat('id-ID', {
+  const formatPrice = (price) =>
+    new Intl.NumberFormat('id-ID', {
       style: 'currency',
       currency: 'IDR',
       minimumFractionDigits: 0,
-      maximumFractionDigits: 0
+      maximumFractionDigits: 0,
     }).format(price);
-  };
 
   const getProductIcon = (name) => {
     const lowerName = name.toLowerCase();
@@ -41,13 +40,13 @@ const ProductCard = ({ product, onOpenModal }) => {
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -5, scale: 1.02 }}
       transition={{ duration: 0.3 }}
-      className="bg-primary rounded-xl shadow-lg overflow-hidden cursor-pointer group"
+      className="bg-primary rounded-xl shadow-md overflow-hidden cursor-pointer group"
       onClick={() => onOpenModal(product)}
     >
-      <div className="relative h-48 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+      <div className="relative h-48 sm:h-56 md:h-64 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
         {product.image ? (
-          <img 
-            src={product.image} 
+          <img
+            src={product.image}
             alt={product.name}
             className="w-full h-full object-cover"
           />
@@ -59,16 +58,16 @@ const ProductCard = ({ product, onOpenModal }) => {
         )}
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
       </div>
-      
-      <div className="p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-2 capitalize line-clamp-2">
+
+      <div className="p-4 md:p-6">
+        <h3 className="text-base md:text-lg font-semibold text-gray-800 mb-2 capitalize line-clamp-2">
           {product.name}
         </h3>
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-accent">
+          <span className="text-lg md:text-2xl font-bold text-accent">
             {formatPrice(product.price)}
           </span>
-          <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">
+          <span className="text-xs md:text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">
             {product.ket}
           </span>
         </div>

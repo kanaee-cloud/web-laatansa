@@ -5,14 +5,13 @@ import { X, Package, Zap, Monitor, Tent, Speaker, Camera, Fan, Lightbulb } from 
 const ProductModal = ({ product, isOpen, onClose }) => {
   if (!product) return null;
 
-  const formatPrice = (price) => {
-    return new Intl.NumberFormat('id-ID', {
+  const formatPrice = (price) =>
+    new Intl.NumberFormat('id-ID', {
       style: 'currency',
       currency: 'IDR',
       minimumFractionDigits: 0,
-      maximumFractionDigits: 0
+      maximumFractionDigits: 0,
     }).format(price);
-  };
 
   const getProductIcon = (name) => {
     const lowerName = name.toLowerCase();
@@ -44,7 +43,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-2 sm:p-4"
           onClick={onClose}
         >
           <motion.div
@@ -52,7 +51,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.7, opacity: 0 }}
             transition={{ type: "spring", damping: 15, stiffness: 300 }}
-            className="bg-primary text-light rounded-2xl max-w-md w-full max-h-[90vh] overflow-y-auto"
+            className="bg-primary text-light rounded-2xl w-full max-w-md max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative">
@@ -62,11 +61,11 @@ const ProductModal = ({ product, isOpen, onClose }) => {
               >
                 <X className="w-5 h-5 text-accent" />
               </button>
-              
-              <div className="relative h-64 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center rounded-t-2xl">
+
+              <div className="relative h-48 sm:h-64 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center rounded-t-2xl">
                 {product.image ? (
-                  <img 
-                    src={product.image} 
+                  <img
+                    src={product.image}
                     alt={product.name}
                     className="w-full h-full object-cover rounded-t-2xl"
                   />
@@ -77,40 +76,40 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                   </div>
                 )}
               </div>
-              
-              <div className="p-6">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 capitalize">
+
+              <div className="p-4 sm:p-6">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 capitalize">
                   {product.name}
                 </h2>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-lg text-gray-600">Harga:</span>
-                    <span className="text-3xl font-bold text-accent">
+                    <span className="text-base text-gray-600">Harga:</span>
+                    <span className="text-xl font-bold text-accent">
                       {formatPrice(product.price)}
                     </span>
                   </div>
-                  
+
                   <div className="flex items-center justify-between">
-                    <span className="text-lg text-gray-600">Satuan:</span>
-                    <span className="text-lg text-gray-800 bg-gray-100 px-3 py-1 rounded-lg">
+                    <span className="text-base text-gray-600">Satuan:</span>
+                    <span className="text-sm sm:text-base text-gray-800 bg-gray-100 px-3 py-1 rounded-lg">
                       {product.ket}
                     </span>
                   </div>
-                  
+
                   <div className="flex items-center justify-between">
-                    <span className="text-lg text-gray-600">ID Produk:</span>
-                    <span className="text-lg text-gray-800 font-mono">
+                    <span className="text-base text-gray-600">ID Produk:</span>
+                    <span className="text-base text-gray-800 font-mono">
                       #{product.id.toString().padStart(3, '0')}
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="mt-6 pt-6 border-t">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-full bg-accent text-white py-3 rounded-lg font-semibold text-lg hover:bg-yellow-500 transition-colors"
+                    className="w-full bg-accent text-white py-3 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-500 transition-colors"
                   >
                     Hubungi untuk Pemesanan
                   </motion.button>
