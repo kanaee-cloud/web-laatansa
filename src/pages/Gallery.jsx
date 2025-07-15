@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -132,11 +133,11 @@ const GalleryImage = () => {
         </motion.div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
           {images.map((image, index) => (
             <motion.div
               key={image.id}
-              className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="group relative overflow-hidden rounded-xl h-64 bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
               variants={cardVariants}
               initial="hidden"
               animate="visible"
@@ -150,7 +151,7 @@ const GalleryImage = () => {
                 <motion.img
                   src={image.image}
                   alt={image.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-64 object-cover"
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                 />
