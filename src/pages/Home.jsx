@@ -6,7 +6,7 @@ import ContactSection from "../components/contact/ContactSection";
 
 const Home = () => {
   const instagram = () => {
-    window.open("https://www.instagram.com/laatansapesta/", "_blank");
+    window.location.href = "/gallery";
   };
 
   const toProduct = () => {
