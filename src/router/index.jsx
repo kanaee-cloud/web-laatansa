@@ -1,8 +1,8 @@
 import { createBrowserRouter, Outlet, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Landing from "../layouts/Landing";
-import Contact from "../pages/Contact";
 import Product from "../pages/Product";
+import Gallery from "../pages/Gallery";
 
 export const router = createBrowserRouter([
   {
@@ -18,8 +18,8 @@ export const router = createBrowserRouter([
             element: <Product />
         },
         {
-            path: "contact",
-            element: <Contact />
+            path: "gallery",
+            element: <Gallery />
         }
     ]
   }

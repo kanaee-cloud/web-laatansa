@@ -12,8 +12,8 @@ const Navbar = () => {
         return "home";
       case "/product":
         return "product";
-      case "/contact":
-        return "contact";
+      case "/gallery":
+        return "gallery";
       default:
         return "home";
     }
@@ -24,7 +24,7 @@ const Navbar = () => {
   const navItems = [
     { id: "home", label: "Home", href: "/" },
     { id: "product", label: "Product", href: "/product" },
-    { id: "contact", label: "Contact Us", href: "/contact" },
+    { id: "gallery", label: "Gallery", href: "/gallery" },
   ];
 
   const handleItemClick = () => {

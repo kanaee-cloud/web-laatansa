@@ -2,16 +2,16 @@ import React from "react";
 import AnimationButton from "../components/common/AnimationButton";
 import AutoSlidingGrid from "../components/gallery/AutoSlidingGrid";
 import CustomerReviewCarousel from "../components/gallery/CustomerReviews";
+import ContactSection from "../components/contact/ContactSection";
 
 const Home = () => {
-
   const instagram = () => {
     window.open("https://www.instagram.com/laatansapesta/", "_blank");
-  }
+  };
 
   const toProduct = () => {
     window.location.href = "/product";
-  }
+  };
 
   return (
     <>
@@ -24,7 +24,7 @@ const Home = () => {
           <p className="text-light opacity-80">
             Laatansa Pesta: Solusi Lengkap untuk Acara Impian Anda.
           </p>
-          <AnimationButton title="Jelajahi Sekarang" onClick={toProduct}/>
+          <AnimationButton title="Jelajahi Sekarang" onClick={toProduct} />
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark to-transparent pointer-events-none"></div>
       </section>
@@ -55,19 +55,29 @@ const Home = () => {
             berbagai acara yang telah kami tangani. Setiap gambar adalah bukti
             dedikasi kami untuk menciptakan pengalaman yang tak terlupakan.
           </p>
-          <AnimationButton title="Lihat Lainnya" onClick={instagram}/>
+          <AnimationButton title="Lihat Lainnya" onClick={instagram} />
         </div>
-          <AutoSlidingGrid />
+        <AutoSlidingGrid />
       </section>
-      <section>
-        <div className="bg-dark text-light py-16 px-4">
+      <section className="bg-dark text-light py-16 px-4">
+        <div >
           <h2 className="text-4xl font-bold text-center mb-2 underline decoration-accent tracking-wide">
             Customer Reviews
           </h2>
-          
-            <CustomerReviewCarousel />
-          
+
+          <CustomerReviewCarousel />
         </div>
+      </section>
+      <section  className="bg-dark text-light py-16 px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold underline decoration-accent  mb-4">
+            Contact Us
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Siap membantu Anda! Hubungi kami melalui berbagai cara atau ikuti media sosial kami untuk update terbaru.
+          </p>
+        </div>
+        <ContactSection />
       </section>
     </>
   );

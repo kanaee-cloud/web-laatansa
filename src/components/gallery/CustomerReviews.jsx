@@ -2,13 +2,14 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Star, Quote, User } from "lucide-react";
+import { defaultReviews } from "../../data/DefaultReviews"; 
 
-// Import Swiper styles
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// Review Card Component
+
 const ReviewCard = ({
   review,
   rating,
@@ -17,7 +18,7 @@ const ReviewCard = ({
   date,
   location,
 }) => {
-  // Generate star rating display
+
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -25,7 +26,7 @@ const ReviewCard = ({
 
     for (let i = 0; i < fullStars; i++) {
       stars.push(
-        <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+        <Star key={i} className="w-5 h-5 fill-accent text-accent" />
       );
     }
 
@@ -34,7 +35,7 @@ const ReviewCard = ({
         <div key="half" className="relative">
           <Star className="w-5 h-5 text-gray-300" />
           <div className="absolute top-0 left-0 w-1/2 overflow-hidden">
-            <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+            <Star className="w-5 h-5 fill-accent text-accent" />
           </div>
         </div>
       );
@@ -49,8 +50,7 @@ const ReviewCard = ({
   };
 
   return (
-    <div className=" rounded-xl shadow-lg p-6 mx-3 my-4 min-h-[280px] flex flex-col justify-between border  border-light/30 hover:shadow-xl transition-shadow duration-300">
-      {/* Quote Icon */}
+    <div className=" rounded-xl shadow-lg p-6 mx-3 my-4 min-h-[280px] flex flex-col justify-between border bg-primary border-light/30 hover:shadow-xl transition-shadow duration-300">
       <div className="flex justify-between items-start mb-4">
         <Quote className="w-8 h-8 text-accent opacity-40" />
         <div className="flex items-center gap-1">
@@ -61,14 +61,14 @@ const ReviewCard = ({
         </div>
       </div>
 
-      {/* Review Text */}
+
       <div className="flex-1 mb-4">
         <p className="text-light opacity-70 text-sm leading-relaxed italic">
           "{review}"
         </p>
       </div>
 
-      {/* Customer Info */}
+ 
       <div className="flex items-center gap-3 pt-4 border-t border-light/30">
         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-yellow-300 flex items-center justify-center overflow-hidden">
           {customerImage ? (
@@ -100,58 +100,7 @@ const ReviewCard = ({
 // Main Carousel Component
 const CustomerReviewCarousel = ({ reviews }) => {
   // Default sample data jika tidak ada props reviews
-  const defaultReviews = [
-    {
-      id: 1,
-      review:
-        "Sangat puas menyewa alat pesta di LaaTansa! Peralatan lengkap, bersih, dan berkualitas. Acara kami jadi lebih meriah. Terima kasih LaaTansa!",
-      rating: 5,
-      customerName: "Rina Sari",
-      customerImage: null,
-      date: "2 hari yang lalu",
-      location: "Bandung",
-    },
-    {
-      id: 2,
-      review:
-        "Pelayanan LaaTansa sangat memuaskan. Proses pemesanan mudah, staf ramah dan membantu. Alat pesta yang disewa dalam kondisi baik dan sesuai kebutuhan acara kami.",
-      rating: 4.5,
-      customerName: "Budi Santoso",
-      customerImage: null,
-      date: "1 minggu yang lalu",
-      location: "Lembang, Bandung",
-    },
-    {
-      id: 3,
-      review:
-        "LaaTansa pilihan tepat untuk sewa alat pesta di Bandung. Harga terjangkau dengan kualitas barang yang oke. Pengiriman dan penjemputan juga tepat waktu. Recommended!",
-      rating: 5,
-      customerName: "Dewi Anggraeni",
-      customerImage: null,
-      date: "3 hari yang lalu",
-      location: "Cimahi, Bandung",
-    },
-    {
-      id: 4,
-      review:
-        "Acara ulang tahun anak saya jadi lebih spesial berkat alat pesta dari LaaTansa. Dekorasi dan perlengkapan lainnya bagus dan anak-anak suka. Terima kasih LaaTansa!",
-      rating: 4.8,
-      customerName: "Herman Wijaya",
-      customerImage: null,
-      date: "5 hari yang lalu",
-      location: "Kabupaten Bandung",
-    },
-    {
-      id: 5,
-      review:
-        "Saya merekomendasikan LaaTansa untuk kebutuhan sewa alat pesta. Pilihan alatnya banyak, kondisi terawat, dan pelayanannya profesional. Sukses terus LaaTansa!",
-      rating: 4.7,
-      customerName: "Siti Aminah",
-      customerImage: null,
-      date: "1 minggu yang lalu",
-      location: "Padalarang, Bandung Barat",
-    },
-  ];
+ 
 
   const reviewData = reviews || defaultReviews;
 
