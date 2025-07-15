@@ -10,8 +10,8 @@ const Navbar = () => {
     switch (pathname) {
       case "/":
         return "home";
-      case "/about":
-        return "about";
+      case "/product":
+        return "product";
       case "/contact":
         return "contact";
       default:
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   const navItems = [
     { id: "home", label: "Home", href: "/" },
-    { id: "about", label: "About", href: "/about" },
+    { id: "product", label: "Product", href: "/product" },
     { id: "contact", label: "Contact Us", href: "/contact" },
   ];
 
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center shadow-md bg-white text-accent px-4 py-2 relative">
-      <img src="/images/logo.png" alt="" className="w-24" />
+      <img src="/images/laatansa.png" alt="" className="w-24" />
 
       <ul className="hidden md:flex space-x-8">
         {navItems.map((item) => (
