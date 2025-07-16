@@ -249,21 +249,21 @@ export const products = [
     "name": "tenda dekorasi (serut)",
     "price": 50000,
     "ket": "/m²",
-    "image": null
+    "image": "/images/product/tenda_serut.png"
   },
   {
     "id": 37,
     "name": "tenda dekorasi (full)",
     "price": 60000,
     "ket": "/m²",
-    "image": null
+    "image": "/images/product/tenda_dekorasi.png"
   },
   {
     "id": 38,
     "name": "tenda dekorasi transparan",
     "price": 100000,
     "ket": "/m²",
-    "image": "/images/tenda_transparan.png"
+    "image": "/images/product/tenda_transparan.png"
   },
   {
     "id": 39,
@@ -291,7 +291,7 @@ export const products = [
     "name": "frame backdrop digiprint",
     "price": 100000,
     "ket": "/m²",
-    "image": null
+    "image": "/images/product/frame_backdrop.png"
   },
   {
     "id": 43,
@@ -354,7 +354,7 @@ export const products = [
     "name": "kursi susun+cover standar",
     "price": 17500,
     "ket": "/buah",
-    "image": null
+    "image": "/images/product/kursi_cover.png"
   },
   {
     "id": 52,
@@ -473,28 +473,28 @@ export const products = [
     "name": "tenda rigging (6x8) m",
     "price": 10000000,
     "ket": "+stage",
-    "image": null
+    "image": "/images/product/tenda_rigging.png"
   },
   {
     "id": 69,
     "name": "tenda rigging (8x12) m",
     "price": 17500000,
     "ket": "+stage",
-    "image": null
+    "image": "/images/product/tenda_rigging.png"
   },
   {
     "id": 70,
     "name": "tenda rigging (8x18) m",
     "price": 25000000,
     "ket": "+stage",
-    "image": null
+    "image": "/images/product/tenda_rigging.png"
   },
   {
     "id": 71,
     "name": "riging gawang/kubus",
     "price": 150000,
     "ket": "/m",
-    "image": null
+    "image": "/images/product/gawang_rigging.png"
   },
   {
     "id": 72,
