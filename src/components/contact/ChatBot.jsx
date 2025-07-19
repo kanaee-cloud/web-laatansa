@@ -233,7 +233,7 @@ const Chatbot = ({ isOpen, onClose}) => {
               onChange={handleInputChange}
               onKeyPress={handleKeyPress}
               placeholder="Ketik pesan Anda di sini..."
-              className="flex-1 border border-gray-300 rounded-full px-4 py-3 focus:outline-none bg-dark focus:border-transparent"
+              className="flex-1 border border-gray-300 rounded-full px-4 py-3 focus:outline-none bg-dark text-light focus:border-transparent"
               disabled={isLoading}
             />
             <button
