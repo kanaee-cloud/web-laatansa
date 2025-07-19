@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Landing from "../layouts/Landing";
 import Product from "../pages/Product";
 import Gallery from "../pages/Gallery";
+import Chat from "../pages/Chat";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +21,11 @@ export const router = createBrowserRouter([
         {
             path: "gallery",
             element: <Gallery />
-        }
+        },
+        // {
+        //     path: "chat",
+        //     element: <Chat />
+        // }
     ]
   }
 ]);
