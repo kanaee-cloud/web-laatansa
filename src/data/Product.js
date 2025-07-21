@@ -4,7 +4,7 @@ export const products = [
     "name": "par can 1000 watt",
     "price": 100000,
     "ket": "/titik",
-    "image": null,
+    "image": "/images/product/par_1000w.png",
     "category": "Lighting"
   },
   {
@@ -12,7 +12,7 @@ export const products = [
     "name": "par can 300 watt",
     "price": 75000,
     "ket": "/titik",
-    "image": null,
+    "image": "images/product/par_300w.png",
     "category": "Lighting"
   },
   {
@@ -20,7 +20,7 @@ export const products = [
     "name": "par led",
     "price": 200000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/parled.png",
     "category": "Lighting"
   },
   {
@@ -28,7 +28,7 @@ export const products = [
     "name": "fresnel led",
     "price": 200000,
     "ket": "/titik",
-    "image": null,
+    "image":  "/images/product/fresnel.png",
     "category": "Lighting"
   },
   {
@@ -36,7 +36,7 @@ export const products = [
     "name": "halogen 500/1000 watt",
     "price": 100000,
     "ket": "/titik",
-    "image": null,
+    "image": "images/product/halogen.png",
     "category": "Lighting"
   },
   {
@@ -52,7 +52,7 @@ export const products = [
     "name": "bulb lamp",
     "price": 50000,
     "ket": "/titik",
-    "image": null,
+    "image": "/images/product/bulb.png",
     "category": "Lighting"
   },
   {
@@ -68,7 +68,7 @@ export const products = [
     "name": "polo spot 2 k manual",
     "price": 1000000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/follow_spot.png",
     "category": "Lighting"
   },
   {
@@ -76,7 +76,7 @@ export const products = [
     "name": "polo spot 2 k digital",
     "price": 1250000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/follow_spot.png",
     "category": "Lighting"
   },
   {
@@ -84,7 +84,7 @@ export const products = [
     "name": "moving head/sharpy beam",
     "price": 1000000,
     "ket": "/titik",
-    "image": null,
+    "image": "/images/product/beam.png",
     "category": "Lighting"
   },
   {
@@ -92,7 +92,7 @@ export const products = [
     "name": "fresnel 1 k",
     "price": 300000,
     "ket": "/titik",
-    "image": null,
+    "image": "/images/product/fresnel.png",
     "category": "Lighting"
   },
   {
@@ -100,7 +100,7 @@ export const products = [
     "name": "fresnel 2 k",
     "price": 350000,
     "ket": "/titik",
-    "image": null,
+    "image": "/images/product/fresnel.png",
     "category": "Lighting"
   },
   {
@@ -108,7 +108,7 @@ export const products = [
     "name": "lampu tl/neon",
     "price": 75000,
     "ket": "/titik",
-    "image": null,
+    "image": "/images/product/lampu_tl.png",
     "category": "Lighting"
   },
   {
@@ -116,7 +116,7 @@ export const products = [
     "name": "gun smoke",
     "price": 500000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/gun_smoke.png",
     "category": "Special Effects"
   },
   {
@@ -396,7 +396,7 @@ export const products = [
     "name": "kursi susun",
     "price": 12500,
     "ket": "/buah",
-    "image": null,
+    "image": "images/product/kursi_susun.png",
     "category": "Decorations"
   },
   {
@@ -412,7 +412,7 @@ export const products = [
     "name": "kursi susun+cover standar + pita",
     "price": 20000,
     "ket": "/buah",
-    "image": null,
+    "image": "/images/product/kursi_pita.png",
     "category": "Decorations"
   },
   {
@@ -420,7 +420,7 @@ export const products = [
     "name": "meja bundar polos",
     "price": 20000,
     "ket": "/buah",
-    "image": null,
+    "image": "/images/product/bundar.png",
     "category": "Decorations"
   },
   {
@@ -452,7 +452,7 @@ export const products = [
     "name": "gen set 50 kva",
     "price": 3000000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/genset.png",
     "category": "Generators"
   },
   {
@@ -460,7 +460,7 @@ export const products = [
     "name": "gen set 60 kva",
     "price": 3250000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/genset.png",
     "category": "Generators"
   },
   {
@@ -468,7 +468,7 @@ export const products = [
     "name": "gen set 80 kva",
     "price": 3500000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/genset.png",
     "category": "Generators"
   },
   {
@@ -476,7 +476,7 @@ export const products = [
     "name": "gen set 100 kva",
     "price": 4000000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/genset.png",
     "category": "Generators"
   },
   {
@@ -596,7 +596,7 @@ export const products = [
     "name": "kursi sofa",
     "price": 150000,
     "ket": "/buah",
-    "image": null,
+    "image": "/images/product/sofa.png",
     "category": "Decorations"
   },
   {
