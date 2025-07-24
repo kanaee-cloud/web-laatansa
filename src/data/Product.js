@@ -140,7 +140,7 @@ export const products = [
     "name": "fire work (pyro)",
     "price": 250000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/pyro.png",
     "category": "Special Effects"
   },
   {
@@ -148,7 +148,7 @@ export const products = [
     "name": "hpi-t 250 watt",
     "price": 250000,
     "ket": "/unit",
-    "image": null,
+    "image": "images/product/hpi_t.png",
     "category": "Special Effects"
   },
   {
@@ -156,7 +156,7 @@ export const products = [
     "name": "hpi-t 400 watt",
     "price": 300000,
     "ket": "/titik",
-    "image": null,
+    "image": "/images/product/hpi_t.png",
     "category": "Special Effects"
   },
   {
@@ -172,7 +172,7 @@ export const products = [
     "name": "ac 5 pk",
     "price": 1250000,
     "ket": "/unit",
-    "image": null,
+    "image": "images/product/ac_5.png",
     "category": "Sound System"
   },
   {
@@ -180,7 +180,7 @@ export const products = [
     "name": "ac 3 pk",
     "price": 1000000,
     "ket": "/unit",
-    "image": null,
+    "image": "images/product/ac_5.png",
     "category": "Sound System"
   },
   {
@@ -188,7 +188,7 @@ export const products = [
     "name": "ac 2 pk",
     "price": 500000,
     "ket": "/unit",
-    "image": null,
+    "image": "images/product/ac_5.png",
     "category": "Sound System"
   },
   {
@@ -196,7 +196,7 @@ export const products = [
     "name": "ac 1 pk (window)",
     "price": 250000,
     "ket": "/unit",
-    "image": null,
+    "image": "images/product/ac_window.png",
     "category": "Sound System"
   },
   {
@@ -204,7 +204,7 @@ export const products = [
     "name": "big blower (18\")",
     "price": 150000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/big_blower.png",
     "category": "Air Conditioner"
   },
   {
@@ -212,7 +212,7 @@ export const products = [
     "name": "mysti fan",
     "price": 500000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/mysti_fan.png",
     "category": "Air Conditioner"
   },
   {

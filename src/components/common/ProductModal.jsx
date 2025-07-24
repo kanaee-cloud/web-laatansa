@@ -91,6 +91,13 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                   </div>
 
                   <div className="flex items-center justify-between">
+                    <span className="text-base text-gray-600">Kategori:</span>
+                    <span className="text-sm sm:text-base text-gray-800 bg-gray-100 px-3 py-1 rounded-lg">
+                      {product.category}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center justify-between">
                     <span className="text-base text-gray-600">Satuan:</span>
                     <span className="text-sm sm:text-base text-gray-800 bg-gray-100 px-3 py-1 rounded-lg">
                       {product.ket}
