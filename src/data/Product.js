@@ -124,7 +124,7 @@ export const products = [
     "name": "conventy (tembak)",
     "price": 350000,
     "ket": "/unit",
-    "image": null,
+    "image": "/images/product/conventy.png",
     "category": "Special Effects"
   },
   {
