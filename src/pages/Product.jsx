@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Info, Package } from "lucide-react";
 import Header from "../components/common/Header";
-import ProductCard from "../components/common/ProductCard";
-import ProductModal from "../components/common/ProductModal";
 import { products } from "../data/Product";
+import LightingSwiper from "../components/product/LightingSwiper";
+import ProductTable from "../components/product/ProductTable";
+import TentSwiper from "../components/product/StageSwiper";
+import StageSwiper from "../components/product/StageSwiper";
 
 const Product = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -35,17 +36,19 @@ const Product = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <Header onSearchChange={setSearchTerm} />
+          <Header />
           <div className="container mx-auto px-4 pt-4">
-            <div className="flex items-center justify-between mt-4">
-              <div className="flex items-center">
-                <Package className="w-8 h-8 mr-2" />
-                <p className="text-2xl font-bold">
-                  {filteredProducts.length} products
-                </p>
-              </div>
+            <div className="flex flex-col items-center justify-between mb-6">
+              <LightingSwiper />
+              <ProductTable data={products} category="Lighting" />
+
+              <StageSwiper />
+              <ProductTable data={products} category="Tent" />
+
+              <TentSwiper />
+              <ProductTable data={products} category="Decorations" />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
               {filteredProducts.length > 0 ? (
                 filteredProducts.map((product) => (
                   <ProductCard
@@ -60,15 +63,15 @@ const Product = () => {
                   <p className="text-xl font-bold">Product not found</p>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </section>
-      <ProductModal
+      {/* <ProductModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         product={selectedProduct}
-      />
+      /> */}
     </>
   );
 };

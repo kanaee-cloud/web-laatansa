@@ -12,7 +12,7 @@ export default {
         accent: "#FE7743",
         light: "#F3F4F6",
         dark: "#121212",
-        gray: "#D7D7D7"
+        gray: "#212A3E"
       },
       backgroundImage: {
         landing: "url('/images/bg-landing.png')",

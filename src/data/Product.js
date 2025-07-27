@@ -285,7 +285,7 @@ export const products = [
     "price": 50000,
     "ket": "/m²",
     "image": "/images/product/tenda_serut.png",
-    "category": "Decorations"
+    "category": "Tent"
   },
   {
     "id": 37,
@@ -293,7 +293,7 @@ export const products = [
     "price": 60000,
     "ket": "/m²",
     "image": "/images/product/tenda_dekorasi.png",
-    "category": "Decorations"
+    "category": "Tent"
   },
   {
     "id": 38,
@@ -301,7 +301,7 @@ export const products = [
     "price": 100000,
     "ket": "/m²",
     "image": "/images/product/tenda_transparan.png",
-    "category": "Decorations"
+    "category": "Tent"
   },
   {
     "id": 39,
@@ -565,7 +565,7 @@ export const products = [
     "price": 150000,
     "ket": "/m",
     "image": "/images/product/gawang_rigging.png",
-    "category": "Decorations"
+    "category": "Tent"
   },
   {
     "id": 72,
