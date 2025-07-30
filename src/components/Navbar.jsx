@@ -27,6 +27,10 @@ const Navbar = () => {
     { id: "gallery", label: "Gallery", href: "/gallery" },
   ];
 
+  const contact = () => {
+    window.location.href = "https://wa.me/628122082237";
+  }
+
   const handleItemClick = () => {
     setIsMenuOpen(false);
   };
@@ -73,7 +77,7 @@ const Navbar = () => {
       </button>
 
       <div className="hidden md:flex items-center">
-        <button className="flex items-center gap-x-2 bg-primary text-white px-6 py-4 rounded-full hover:bg-opacity-90 transition-all duration-300 hover:scale-105">
+        <button onClick={contact} className="flex items-center gap-x-2 bg-primary text-white px-6 py-4 rounded-full hover:bg-opacity-90 transition-all duration-300 hover:scale-105">
           <ContactRound />
           <span>Contact</span>
         </button>
@@ -106,7 +110,7 @@ const Navbar = () => {
           ))}
 
           <li className="p-4">
-            <button className="flex items-center gap-x-2 justify-center w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-300">
+            <button onClick={contact} className="flex items-center gap-x-2 justify-center w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-300">
               <ContactRound />
               <span>Contact</span>
             </button>

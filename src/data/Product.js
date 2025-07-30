@@ -173,7 +173,7 @@ export const products = [
     "price": 1250000,
     "ket": "/unit",
     "image": "images/product/ac_5.png",
-    "category": "Sound System"
+    "category": "Air Conditioner"
   },
   {
     "id": 23,
@@ -181,7 +181,7 @@ export const products = [
     "price": 1000000,
     "ket": "/unit",
     "image": "images/product/ac_5.png",
-    "category": "Sound System"
+    "category": "Air Conditioner"
   },
   {
     "id": 24,
@@ -189,7 +189,7 @@ export const products = [
     "price": 500000,
     "ket": "/unit",
     "image": "images/product/ac_5.png",
-    "category": "Sound System"
+    "category": "Air Conditioner"
   },
   {
     "id": 25,
@@ -197,7 +197,7 @@ export const products = [
     "price": 250000,
     "ket": "/unit",
     "image": "images/product/ac_window.png",
-    "category": "Sound System"
+    "category": "Air Conditioner"
   },
   {
     "id": 26,

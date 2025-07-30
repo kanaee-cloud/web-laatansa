@@ -5,13 +5,12 @@ import 'swiper/css/effect-coverflow';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCoverflow } from 'swiper/modules';
 
-const TentSwiper = () => {
+const AirSwiper = () => {
   const images = [
-    { id: 1, src: "/images/tenda.png" },
-    { id: 2, src: "/images/tenda_2.png" },
-    { id: 3, src: "/images/tenda_3.png" },
-    { id: 4, src: "/images/tenda_4.png" },
-    { id: 5, src: "/images/tenda_5.png" },
+    { id: 1, src: "/images/air.png" },
+    { id: 2, src: "/images/air_2.png" },
+    { id: 3, src: "/images/air_3.png" },
+    // { id: 4, src: "/images/air_4.png" },
   ];
 
   return (
@@ -65,4 +64,4 @@ const TentSwiper = () => {
   );
 };
 
-export default TentSwiper;
+export default AirSwiper;

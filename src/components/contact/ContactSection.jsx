@@ -17,16 +17,16 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: 'Telepon',
-      value: '+62 812-3456-7890',
+      value: '+62 812-2082-237',
       description: 'Hubungi kami kapan saja',
       action: 'tel:+6281234567890'
     },
     {
       icon: MessageCircle,
       title: 'WhatsApp',
-      value: '+62 812-3456-7890',
+      value: '+62 812-2082-237',
       description: 'Chat langsung dengan kami',
-      action: 'https://wa.me/6281234567890'
+      action: 'https://wa.me/628122082237'
     },
     {
       icon: Mail,
