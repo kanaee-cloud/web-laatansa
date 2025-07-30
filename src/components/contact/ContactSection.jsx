@@ -40,7 +40,7 @@ const ContactSection = () => {
       title: 'Alamat',
       value: 'Jl. Ciganitri Utara, Sunny Town Regency, Kab. Bandung',
       description: 'Kunjungi kantor kami',
-      action: 'https://maps.google.com'
+      action: 'https://maps.app.goo.gl/NcJuGfzWmbPvPNSa6'
     }
   ];
 
@@ -80,7 +80,15 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-dark text-light" id="contact">
+      <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold underline decoration-accent  mb-4">
+            Contact Us
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Siap membantu Anda! Hubungi kami melalui berbagai cara atau ikuti media sosial kami untuk update terbaru.
+          </p>
+        </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
         

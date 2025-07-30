@@ -12,6 +12,7 @@ const StageSwiper = () => {
     { id: 3, src: "/images/stage_3.png" },
     { id: 4, src: "/images/stage_4.png" },
     { id: 5, src: "/images/stage_5.png" },
+    { id: 6, src: "/images/stage_6.png" },
   ];
 
   return (

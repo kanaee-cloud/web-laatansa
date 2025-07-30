@@ -68,17 +68,7 @@ const Home = () => {
           <CustomerReviewCarousel />
         </div>
       </section>
-      <section  className="bg-dark text-light py-16 px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold underline decoration-accent  mb-4">
-            Contact Us
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Siap membantu Anda! Hubungi kami melalui berbagai cara atau ikuti media sosial kami untuk update terbaru.
-          </p>
-        </div>
-        <ContactSection />
-      </section>
+  
     </>
   );
 };
