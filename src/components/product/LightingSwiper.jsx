@@ -7,11 +7,13 @@ import { Pagination, EffectCoverflow } from 'swiper/modules';
 
 const LightingSwiper = () => {
   const images = [
-    { id: 1, src: "/images/lighting.png" },
-    { id: 2, src: "/images/lighting_2.png" },
-    { id: 3, src: "/images/lighting_3.png" },
-    { id: 4, src: "/images/lighting_4.png" },
-    { id: 5, src: "/images/lighting_5.png" },
+    { id: 1, src: "/images/lighting.png", caption: "Par Can" },
+    { id: 2, src: "/images/lighting_2.png", caption: "Moving Head" },
+    { id: 3, src: "/images/lighting_3.png", caption: "Halogen" },
+    { id: 4, src: "/images/lighting_4.png", caption: "Fresnel LED" },
+    { id: 5, src: "/images/lighting_5.png", caption: "Polo Spot" },
+    { id: 6, src: "/images/lighting_6.png", caption: "Fairy Light" },
+    { id: 7, src: "/images/lighting_7.png", caption: "All Lighting Production" },
   ];
 
   return (
@@ -43,7 +45,7 @@ const LightingSwiper = () => {
                   {/* Gambar utama */}
                   <img
                     src={img.src}
-                    alt={`Tent ${img.id}`}
+                    alt={`Lighting ${img.id}`}
                     className="max-w-[95%] h-full object-contain rounded-xl shadow-xl"
                   />
 
@@ -55,6 +57,11 @@ const LightingSwiper = () => {
                       className="w-16  opacity-80 pointer-events-none"
                     />
                   </div>
+                </div>
+
+                {/* Caption for the image */}
+                <div className="absolute bottom-2 left-2 z-10 bg-black bg-opacity-50 text-white px-2 py-1 rounded">
+                  {img.caption}
                 </div>
               </div>
             </div>

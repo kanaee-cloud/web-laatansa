@@ -8,6 +8,7 @@ import ProductTable from "../components/product/ProductTable";
 import TentSwiper from "../components/product/TentSwiper";
 import StageSwiper from "../components/product/StageSwiper";
 import AirSwiper from "../components/product/AirSwiper";
+import LedSwiper from "../components/product/LedSwiper";
 
 const Product = () => {
   // const [selectedProduct, setSelectedProduct] = useState(null);
@@ -57,6 +58,9 @@ const Product = () => {
 
               <LightingSwiper />
               <ProductTable data={products} category="Lighting" />
+
+              <LedSwiper />
+              <ProductTable data={products} category="Display" />
 
               <ProductTable data={products} category="Sound System" />
 

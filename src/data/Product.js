@@ -51,7 +51,7 @@ export const products = [
     "id": 7,
     "name": "bulb lamp",
     "price": 50000,
-    "ket": "/titik",
+    "ket": "/meter",
     "image": "/images/product/bulb.png",
     "category": "Lighting"
   },
@@ -98,7 +98,7 @@ export const products = [
   {
     "id": 13,
     "name": "fresnel 2 k",
-    "price": 350000,
+    "price": 500000,
     "ket": "/titik",
     "image": "/images/product/fresnel.png",
     "category": "Lighting"
@@ -202,7 +202,7 @@ export const products = [
   {
     "id": 26,
     "name": "big blower (18\")",
-    "price": 150000,
+    "price": 250000,
     "ket": "/unit",
     "image": "/images/product/big_blower.png",
     "category": "Air Conditioner"
@@ -225,16 +225,16 @@ export const products = [
   },
   {
     "id": 29,
-    "name": "chandelier besar",
-    "price": 750000,
+    "name": "Chandelier 3 Susun",
+    "price": 1000000,
     "ket": "/unit",
     "image": null,
     "category": "Decorations"
   },
   {
     "id": 30,
-    "name": "chandelier kecil",
-    "price": 550000,
+    "name": "Chandelier 2 Susun",
+    "price": 750000,
     "ket": "/unit",
     "image": null,
     "category": "Decorations"
@@ -273,8 +273,8 @@ export const products = [
   },
   {
     "id": 35,
-    "name": "dekorasi kain (backdrop)",
-    "price": 75000,
+    "name": "Meja IBM + cover",
+    "price": 200000,
     "ket": "/m²",
     "image": null,
     "category": "Decorations"
@@ -330,7 +330,7 @@ export const products = [
   {
     "id": 42,
     "name": "frame backdrop digiprint",
-    "price": 100000,
+    "price": 200000,
     "ket": "/m²",
     "image": "/images/product/frame_backdrop.png",
     "category": "Decorations"
@@ -370,23 +370,23 @@ export const products = [
   {
     "id": 47,
     "name": "permadani",
-    "price": 150000,
-    "ket": "/mbr",
+    "price": 200000,
+    "ket": "/lembar",
     "image": null,
     "category": "Decorations"
   },
   {
     "id": 48,
     "name": "sound system",
-    "price": 750000,
-    "ket": "/kw",
+    "price": 1000000,
+    "ket": "/1000 watt",
     "image": null,
     "category": "Sound System"
   },
   {
     "id": 49,
     "name": "kursi lipat",
-    "price": 6000,
+    "price": 7500,
     "ket": "/buah",
     "image": null,
     "category": "Decorations"
@@ -481,7 +481,7 @@ export const products = [
   },
   {
     "id": 61,
-    "name": "tv plasma 42\"",
+    "name": "LED (P3 / P4) INDOOR",
     "price": 750000,
     "ket": "/unit",
     "image": null,
@@ -489,7 +489,7 @@ export const products = [
   },
   {
     "id": 62,
-    "name": "proyektor 3rb ansi lumen",
+    "name": "LED (P3 / P4) OUTDOOR",
     "price": 1000000,
     "ket": "/unit",
     "image": null,
@@ -497,6 +497,46 @@ export const products = [
   },
   {
     "id": 63,
+    "name": "TV STANDING 42\"",
+    "price": 750000,
+    "ket": "/unit",
+    "image": null,
+    "category": "Display"
+  },
+  {
+    "id": 64,
+    "name": "TV STANDING 50\"",
+    "price": 1000000,
+    "ket": "/unit",
+    "image": null,
+    "category": "Display"
+  },
+  {
+    "id": 65,
+    "name": "TV STANDING 65\"",
+    "price": 1250000,
+    "ket": "/unit",
+    "image": null,
+    "category": "Display"
+  },
+  {
+    "id": 66,
+    "name": "TV STANDING 70\"",
+    "price": 1500000,
+    "ket": "/unit",
+    "image": null,
+    "category": "Display"
+  },
+  {
+    "id": 67,
+    "name": "proyektor 3rb ansi lumen",
+    "price": 1000000,
+    "ket": "/unit",
+    "image": null,
+    "category": "Display"
+  },
+  {
+    "id": 68,
     "name": "proyektor 5rb ansi lumen",
     "price": 2000000,
     "ket": "/unit",
@@ -504,7 +544,7 @@ export const products = [
     "category": "Display"
   },
   {
-    "id": 64,
+    "id": 69,
     "name": "proyektor 7rb ansi lumen",
     "price": 3000000,
     "ket": "/unit",
@@ -512,7 +552,7 @@ export const products = [
     "category": "Display"
   },
   {
-    "id": 65,
+    "id": 70,
     "name": "screen (2x3)m",
     "price": 1000000,
     "ket": "/unit",
@@ -520,7 +560,7 @@ export const products = [
     "category": "Display"
   },
   {
-    "id": 66,
+    "id": 71,
     "name": "screen (3x4)m",
     "price": 2000000,
     "ket": "/unit",
@@ -528,7 +568,7 @@ export const products = [
     "category": "Display"
   },
   {
-    "id": 67,
+    "id": 72,
     "name": "screen (4x6)m",
     "price": 3000000,
     "ket": "/unit",
@@ -536,7 +576,7 @@ export const products = [
     "category": "Display"
   },
   {
-    "id": 68,
+    "id": 73,
     "name": "tenda rigging (6x8) m",
     "price": 10000000,
     "ket": "+stage",
@@ -544,7 +584,7 @@ export const products = [
     "category": "Tent"
   },
   {
-    "id": 69,
+    "id": 74,
     "name": "tenda rigging (8x12) m",
     "price": 17500000,
     "ket": "+stage",
@@ -552,7 +592,7 @@ export const products = [
     "category": "Tent"
   },
   {
-    "id": 70,
+    "id": 75,
     "name": "tenda rigging (8x18) m",
     "price": 25000000,
     "ket": "+stage",
@@ -560,7 +600,7 @@ export const products = [
     "category": "Tent"
   },
   {
-    "id": 71,
+    "id": 76,
     "name": "riging gawang/kubus",
     "price": 150000,
     "ket": "/m",
@@ -568,7 +608,7 @@ export const products = [
     "category": "Tent"
   },
   {
-    "id": 72,
+    "id": 77,
     "name": "sarnavil (3x3) m",
     "price": 500000,
     "ket": "/unit",
@@ -576,7 +616,7 @@ export const products = [
     "category": "Decorations"
   },
   {
-    "id": 73,
+    "id": 78,
     "name": "sarnavil (5x5) m",
     "price": 750000,
     "ket": "/unit",
@@ -584,7 +624,7 @@ export const products = [
     "category": "Decorations"
   },
   {
-    "id": 74,
+    "id": 79,
     "name": "baricade",
     "price": 100000,
     "ket": "/m",
@@ -592,31 +632,31 @@ export const products = [
     "category": "Decorations"
   },
   {
-    "id": 75,
+    "id": 80,
     "name": "kursi sofa",
-    "price": 150000,
+    "price": 250000,
     "ket": "/buah",
     "image": "/images/product/sofa.png",
     "category": "Decorations"
   },
   {
-    "id": 76,
+    "id": 81,
     "name": "meja kaca",
-    "price": 100000,
+    "price": 200000,
     "ket": "/buah",
     "image": null,
     "category": "Decorations"
   },
   {
-    "id": 77,
-    "name": "partisi r8 (paket)",
+    "id": 82,
+    "name": "partisi r8 (pake min. 100 m²)",
     "price": 75000,
     "ket": "/m²",
     "image": null,
     "category": "Decorations"
   },
   {
-    "id": 78,
+    "id": 83,
     "name": "partisi r8 (sekat/dinding)",
     "price": 150000,
     "ket": "/m²",
@@ -624,35 +664,20 @@ export const products = [
     "category": "Decorations"
   },
   {
-    "id": 79,
-    "name": "bilik sterilisasi",
-    "price": 2000000,
-    "ket": "/unit",
+    "id": 84,
+    "name": "Tiffany Chair/crossback",
+    "price": 75000,
+    "ket": "/buah",
     "image": null,
-    "category": "Medical"
+    "category": "Decorations"
   },
   {
-    "id": 80,
-    "name": "hand washer",
-    "price": 750000,
-    "ket": "/unit",
+    "id": 85,
+    "name": "Meja IBM Polos",
+    "price": 150000,
+    "ket": "/buah",
     "image": null,
-    "category": "Medical"
+    "category": "Decorations"
   },
-  {
-    "id": 81,
-    "name": "led screen (indoor)",
-    "price": 1250000,
-    "ket": "/m²",
-    "image": null,
-    "category": "Display"
-  },
-  {
-    "id": 82,
-    "name": "led screen (outdoor)",
-    "price": 1500000,
-    "ket": "/m²",
-    "image": null,
-    "category": "Display"
-  }
+  
 ]

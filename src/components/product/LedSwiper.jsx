@@ -5,15 +5,11 @@ import 'swiper/css/effect-coverflow';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCoverflow } from 'swiper/modules';
 
-const StageSwiper = () => {
+const LedSwiper = () => {
   const images = [
-    { id: 1, src: "/images/stage.png", caption: "Meja Bundar & Kursi Cover" },
-    { id: 2, src: "/images/stage_2.png", caption: "Backdrop" },
-    { id: 3, src: "/images/stage_3.png", caption: "Barikade" },
-    { id: 4, src: "/images/stage_4.png", caption: "Layer Kain" },
-    { id: 5, src: "/images/stage_5.png", caption: "Karpet" },
-    { id: 6, src: "/images/stage_6.png", caption: "Chandelier" },
-    { id: 7, src: "/images/sarnavil.png", caption: "Sarnavil" },
+    { id: 1, src: "/images/led.png", caption: "LED Screen" },
+    { id: 2, src: "/images/led_2.png", caption: "TV Standing" },
+    { id: 3, src: "/images/led_3.png", caption: "Proyektor" },
   ];
 
   return (
@@ -45,7 +41,7 @@ const StageSwiper = () => {
                   {/* Gambar utama */}
                   <img
                     src={img.src}
-                    alt={`Tent ${img.id}`}
+                    alt={`LED ${img.id}`}
                     className="max-w-[95%] h-full object-contain rounded-xl shadow-xl"
                   />
 
@@ -57,11 +53,11 @@ const StageSwiper = () => {
                       className="w-16  opacity-80 pointer-events-none"
                     />
                   </div>
+                </div>
 
-                  {/* Caption untuk setiap gambar */}
-                  <div className="absolute bottom-2 left-2 z-10 bg-black bg-opacity-50 text-white px-2 py-1 rounded">
-                    {img.caption}
-                  </div>
+                {/* Caption for the image */}
+                <div className="absolute bottom-2 left-2 z-10 bg-black bg-opacity-50 text-white px-2 py-1 rounded">
+                  {img.caption}
                 </div>
               </div>
             </div>
@@ -72,4 +68,4 @@ const StageSwiper = () => {
   );
 };
 
-export default StageSwiper;
+export default LedSwiper;

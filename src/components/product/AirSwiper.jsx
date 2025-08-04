@@ -7,9 +7,9 @@ import { Pagination, EffectCoverflow } from 'swiper/modules';
 
 const AirSwiper = () => {
   const images = [
-    { id: 1, src: "/images/air.png" },
-    { id: 2, src: "/images/air_2.png" },
-    { id: 3, src: "/images/air_3.png" },
+    { id: 1, src: "/images/air.png", caption: "AC PK" },
+    { id: 2, src: "/images/air_2.png", caption: "Cooling Fan" },
+    { id: 3, src: "/images/air_3.png", caption: "Big Blower" },
     // { id: 4, src: "/images/air_4.png" },
   ];
 
@@ -54,6 +54,10 @@ const AirSwiper = () => {
                       className="w-16  opacity-80 pointer-events-none"
                     />
                   </div>
+
+                  <div className="absolute bottom-2 left-2 z-10 bg-black bg-opacity-50 text-white px-2 py-1 rounded">
+                  {img.caption}
+                </div>
                 </div>
               </div>
             </div>
