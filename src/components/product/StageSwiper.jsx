@@ -23,9 +23,23 @@ const StageSwiper = () => {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={1}
+        spaceBetween={10}
         pagination={{ clickable: true }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        }}
         coverflowEffect={{
           rotate: 30,
           stretch: 0,
@@ -40,25 +54,19 @@ const StageSwiper = () => {
           <SwiperSlide key={img.id}>
             <div className="relative flex justify-center items-center h-full">
               <div className="relative">
-                {/* Container gambar dengan posisi relative */}
                 <div className="relative">
-                  {/* Gambar utama */}
                   <img
                     src={img.src}
                     alt={`Tent ${img.id}`}
-                    className="max-w-[95%] h-full object-contain rounded-xl shadow-xl"
+                    className="w-full h-full object-contain rounded-xl shadow-xl"
                   />
-
-                  {/* Watermark: logo di kiri atas gambar seperti di contoh */}
                   <div className="absolute top-2 left-2 z-10">
                     <img
                       src="/images/laatansa.png"
                       alt="Watermark Logo"
-                      className="w-16  opacity-80 pointer-events-none"
+                      className="w-16 opacity-80 pointer-events-none"
                     />
                   </div>
-
-                  {/* Caption untuk setiap gambar */}
                   <div className="absolute bottom-2 left-2 z-10 bg-black bg-opacity-50 text-white px-2 py-1 rounded">
                     {img.caption}
                   </div>
